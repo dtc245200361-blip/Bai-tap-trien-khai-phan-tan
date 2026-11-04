@@ -1,0 +1,27 @@
+
+@api = http://localhost:5081
+
+### 1. Kiem tra API
+GET {{api}}/
+
+### 2. Chao nguoi dung
+GET {{api}}/hello/An
+
+### 3. Chao tieng Anh
+GET {{api}}/hello/An?language=en
+
+### 4. Tao loi chao
+POST {{api}}/greetings
+Content-Type: application/json
+
+{
+    "name": "Binh"
+}
+
+### 5. Kiem tra ten rong
+POST {{api}}/greetings
+Content-Type: application/json
+
+{
+    "name": ""
+}
